@@ -3,7 +3,7 @@ using System.Management;
 
 namespace PCInfo
 {
-    class Drives
+    static class Drives
     {
         private static ManagementObjectSearcher driveSearcher = new ManagementObjectSearcher("SELECT * FROM Win32_DiskDrive");
         
