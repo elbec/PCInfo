@@ -10,22 +10,22 @@ namespace PCInfo
         public static void GetInfo()
         {
             Console.WriteLine("GPU Properties:");
-            Console.WriteLine("-----------------------------------------------------------------------------");
-            Console.WriteLine("-----------------------------------------------------------------------------");
+            Console.WriteLine("=============================================================================");
+            Console.WriteLine("=============================================================================");
             foreach (ManagementBaseObject gpu in gpuSearcher.Get())
             {
-                Console.WriteLine("Name: " + gpu.Name());
-                Console.WriteLine("Status: " + gpu.Status());
-                Console.WriteLine("Caption: " + gpu.Caption());
-                Console.WriteLine("DeviceID: " + gpu.DeviceID());
-                Console.WriteLine("AdapterRAM: " + gpu.AdapterRAM());
-                Console.WriteLine("AdapterDACType: " + gpu.AdapterDACType());
-                Console.WriteLine("Monochrome: " + gpu.Monochrome());
-                Console.WriteLine("InstalledDisplayDrivers: " + gpu.InstalledDisplayDrivers());
-                Console.WriteLine("DriverVersion: " + gpu.DriverVersion());
-                Console.WriteLine("VideoProcessor: " + gpu.VideoProcessor());
-                Console.WriteLine("VideoArchitecture: " + gpu.VideoArchitecture());
-                Console.WriteLine("VideoMemoryType: " + gpu.VideoMemoryType());
+                Console.WriteLine("  Name .................................. : {0}", gpu.Name());
+                Console.WriteLine("  Status ................................ : {0}", gpu.Status());
+                Console.WriteLine("  Caption ............................... : {0}", gpu.Caption());
+                Console.WriteLine("  DeviceID .............................. : {0}", gpu.DeviceID());
+                Console.WriteLine("  AdapterRAM ............................ : {0}", gpu.AdapterRAM());
+                Console.WriteLine("  AdapterDACType ........................ : {0}", gpu.AdapterDACType());
+                Console.WriteLine("  Monochrome ............................ : {0}", gpu.Monochrome());
+                Console.WriteLine("  InstalledDisplayDrivers ............... : {0}", gpu.InstalledDisplayDrivers());
+                Console.WriteLine("  DriverVersion ......................... : {0}", gpu.DriverVersion());
+                Console.WriteLine("  VideoProcessor ........................ : {0}", gpu.VideoProcessor());
+                Console.WriteLine("  VideoArchitecture ..................... : {0}", gpu.VideoArchitecture());
+                Console.WriteLine("  VideoMemoryType ....................... : {0}", gpu.VideoMemoryType());
                 Console.WriteLine();
             }
             Console.WriteLine();

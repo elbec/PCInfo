@@ -8,8 +8,8 @@ namespace PCInfo
         public static void GetInfo()
         {
             Console.WriteLine("Network Interfaces Properties:");
-            Console.WriteLine("-----------------------------------------------------------------------------");
-            Console.WriteLine("-----------------------------------------------------------------------------");
+            Console.WriteLine("=============================================================================");
+            Console.WriteLine("=============================================================================");
             NetworkInterface[] nics = NetworkInterface.GetAllNetworkInterfaces();
             if (nics == null || nics.Length < 1)
             {
@@ -79,6 +79,9 @@ namespace PCInfo
                 Console.WriteLine("  Multicast ............................... : {0}",
                     adapter.SupportsMulticast);
             }
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
         }
     }
 }

@@ -9,8 +9,8 @@ namespace PCInfo
         public static void GetInfo()
         {
             Console.WriteLine("Operation System Properties:");
-            Console.WriteLine("-----------------------------------------------------------------------------");
-            Console.WriteLine("-----------------------------------------------------------------------------");
+            Console.WriteLine("=============================================================================");
+            Console.WriteLine("=============================================================================");
             foreach (ManagementBaseObject obj in osSearcher.Get())
             {
                 Console.WriteLine("  Caption ............................... : {0}", obj.Caption());

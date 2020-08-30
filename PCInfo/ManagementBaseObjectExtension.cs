@@ -433,6 +433,17 @@ namespace PCInfo
                 return notFound;
             }
         }
+        static public string ProductName(this ManagementBaseObject obj)
+        {
+            try
+            {
+                return obj["ProductName"].ToString();
+            }
+            catch (Exception)
+            {
+                return notFound;
+            }
+        }
 
     }
 }

@@ -12,8 +12,8 @@ namespace PCInfo
         public static void GetInfo()
         {
             Console.WriteLine("Motherboard Properties:");
-            Console.WriteLine("-----------------------------------------------------------------------------");
-            Console.WriteLine("-----------------------------------------------------------------------------");
+            Console.WriteLine("=============================================================================");
+            Console.WriteLine("=============================================================================");
             Console.WriteLine("  Availability .......................... : {0}", Motherboard.Availability);
             Console.WriteLine("  HostingBoard .......................... : {0}", Motherboard.HostingBoard);
             Console.WriteLine("  InstallDate ........................... : {0}", Motherboard.InstallDate);
