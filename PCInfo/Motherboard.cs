@@ -3,34 +3,35 @@ using System.Management;
 
 namespace PCInfo
 {
-    internal static class Motherboard
+    public static class Motherboard
     {
         private static ManagementObjectSearcher baseboardSearcher = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_BaseBoard");
         private static ManagementObjectSearcher motherboardSearcher = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_MotherboardDevice");
         private static string notFound = "Not found!";
 
-        public static void GetMotherBoardInfo()
+        public static void GetInfo()
         {
             Console.WriteLine("Motherboard Properties:");
             Console.WriteLine("-----------------------------------------------------------------------------");
             Console.WriteLine("-----------------------------------------------------------------------------");
-            Console.WriteLine("Availability: " + Motherboard.Availability);
-            Console.WriteLine("HostingBoard: " + Motherboard.HostingBoard);
-            Console.WriteLine("InstallDate: " + Motherboard.InstallDate);
-            Console.WriteLine("Manufacturer: " + Motherboard.Manufacturer);
-            Console.WriteLine("Model: " + Motherboard.Model);
-            Console.WriteLine("PartNumber: " + Motherboard.PartNumber);
-            Console.WriteLine("PNPDeviceID: " + Motherboard.PNPDeviceID);
-            Console.WriteLine("PrimaryBusType: " + Motherboard.PrimaryBusType);
-            Console.WriteLine("Product: " + Motherboard.Product);
-            Console.WriteLine("Removable: " + Motherboard.Removable);
-            Console.WriteLine("Replaceable: " + Motherboard.Replaceable);
-            Console.WriteLine("RevisionNumber: " + Motherboard.RevisionNumber);
-            Console.WriteLine("SecondaryBusType: " + Motherboard.SecondaryBusType);
-            Console.WriteLine("SerialNumber: " + Motherboard.SerialNumber);
-            Console.WriteLine("Status: " + Motherboard.Status);
-            Console.WriteLine("SystemName: " + Motherboard.SystemName);
-            Console.WriteLine("Version: " + Motherboard.Version);
+            Console.WriteLine("  Availability .......................... : {0}", Motherboard.Availability);
+            Console.WriteLine("  HostingBoard .......................... : {0}", Motherboard.HostingBoard);
+            Console.WriteLine("  InstallDate ........................... : {0}", Motherboard.InstallDate);
+            Console.WriteLine("  Manufacturer .......................... : {0}", Motherboard.Manufacturer);
+            Console.WriteLine("  Model: ................................ : {0}", Motherboard.Model);
+            Console.WriteLine("  PartNumber ............................ : {0}", Motherboard.PartNumber);
+            Console.WriteLine("  PNPDeviceID ........................... : {0}", Motherboard.PNPDeviceID);
+            Console.WriteLine("  PrimaryBusType ........................ : {0}", Motherboard.PrimaryBusType);
+            Console.WriteLine("  Product ............................... : {0}", Motherboard.Product);
+            Console.WriteLine("  Removable ............................. : {0}", Motherboard.Removable);
+            Console.WriteLine("  Replaceable ........................... : {0}", Motherboard.Replaceable);
+            Console.WriteLine("  RevisionNumber ........................ : {0}", Motherboard.RevisionNumber);
+            Console.WriteLine("  SecondaryBusType ...................... : {0}", Motherboard.SecondaryBusType);
+            Console.WriteLine("  SerialNumber .......................... : {0}", Motherboard.SerialNumber);
+            Console.WriteLine("  Status ................................ : {0}", Motherboard.Status);
+            Console.WriteLine("  SystemName ............................ : {0}", Motherboard.SystemName);
+            Console.WriteLine("  Version ............................... : {0}", Motherboard.Version);
+            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
         }
