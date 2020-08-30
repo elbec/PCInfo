@@ -2,7 +2,7 @@
 
 This application provides all hardware information from you PC. The picture below shows the main view.
 
-![Console Main View](https://octodex.github.com/images/yaktocat.png)
+![Console Main View](https://github.com/elbec/PCInfo/blob/master/PCInfo/mainView.JPG)
 
 ## Menu
 
