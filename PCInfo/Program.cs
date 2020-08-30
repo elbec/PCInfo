@@ -2,11 +2,15 @@
 
 namespace PCInfo
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Motherboard.GetMotherBoardInfo();
+            Drives.GetDrivesInfo();
+
+            Console.Write("Any key to exit");
+            Console.ReadKey();
         }
     }
 }
