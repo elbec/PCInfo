@@ -104,9 +104,9 @@ namespace PCInfo
             Console.WriteLine("  5 - Graphics Processing Unit");
             Console.WriteLine("  6 - Drives");
             Console.WriteLine("  7 - Sound Devices");
-            Console.WriteLine("  8 - Netzwork Interfaces");
+            Console.WriteLine("  8 - Network Interfaces");
             Console.WriteLine("  9 - Printers");
-            Console.WriteLine("  0 - Exit");
+            Console.WriteLine("  0 - Exit Application");
             Console.WriteLine();
             Console.WriteLine("Choose a number");
         }
