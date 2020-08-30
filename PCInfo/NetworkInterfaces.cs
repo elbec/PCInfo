@@ -53,21 +53,10 @@ namespace PCInfo
                 Console.WriteLine("  DNS suffix .............................. : {0}",
                     properties.DnsSuffix);
 
-                string label;
                 if (adapter.Supports(NetworkInterfaceComponent.IPv4))
                 {
                     IPv4InterfaceProperties ipv4 = properties.GetIPv4Properties();
                     Console.WriteLine("  MTU...................................... : {0}", ipv4.Mtu);
-                    if (ipv4.UsesWins)
-                    {
-
-                        IPAddressCollection winsServers = properties.WinsServersAddresses;
-                        if (winsServers.Count > 0)
-                        {
-                            label = "  WINS Servers ............................ :";
-                            //ShowIPAddresses(label, winsServers);
-                        }
-                    }
                 }
 
                 Console.WriteLine("  DNS enabled ............................. : {0}",
