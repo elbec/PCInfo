@@ -1,6 +1,6 @@
 ﻿# PC HARDWARE INFORMATIONS
 
-This application provides all hardware information from you PC. The picture below shows the main view.
+This application provides all hardware information from your PC. The picture below shows the main view.
 
 ![Console Main View](https://github.com/elbec/PCInfo/blob/master/PCInfo/mainView.JPG)
 
