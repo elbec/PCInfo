@@ -1,4 +1,7 @@
-﻿# PC HARDWARE INFORMATIONS
+![GitHub All Releases](https://img.shields.io/github/downloads/elbec/PCInfo/total)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/elbec/PCInfo)
+
+ # PC HARDWARE INFORMATIONS
 
 This application provides all hardware information from your PC. The picture below shows the main view.
 
